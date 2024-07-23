@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.todo {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.todo__heading {
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+    margin-bottom: 40px;
+}
+
+.todo__input-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__input {
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    padding: 0 10px;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+}
+
+.todo__input::placeholder {
+    color: #a8a8a8;
+}
+
+.todo__cta-btn {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #48b8f8;
+    border: 1px solid #48b8f8;
+    color: #fff;
+    font-weight: 600;
+}
+
+.todo__list {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item__text {
+    font-size: 18px;
+}
+
+.todo-item__delete,
+.todo-item__edit {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-item__delete {
+    margin-left: auto;
+    margin-right: 10px;
+    border: 1px solid #f77474;
+    background-color: #f77474;
+    color: #fff;
+}
+
+.todo-item__edit {
+    border: 1px solid #cef011;
+    background-color: #cef011;
+}
+
+.todo__delete-all {
+    display: block;
+    margin: 40px auto 0;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    color: red;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo__image {
+    display: block;
+    margin: 15px auto 0;
+    width: 200px;
+}
+
+.logo {
+    height: 10em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
